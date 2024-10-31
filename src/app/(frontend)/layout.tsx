@@ -22,7 +22,15 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html
+			lang="en"
+			className={`
+      ${GTFAdieu.variable}
+      ${GTFAdieu_Slanted.variable}
+      ${GTFAdieu_Backslant.variable}
+      ${Source_Sans_3.variable}
+    `}
+		>
 			<body>
 				<Nav />
 				<main role="main" id="main-content" tabIndex={-1}>

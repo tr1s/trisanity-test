@@ -1,0 +1,51 @@
+/*
+ * URL component styles.
+ * ------------------------------------------------------------------------------
+ *
+ */
+
+.url {
+	font-size: 1.6rem;
+	display: flex;
+	flex-direction: column;
+	letter-spacing: 1.01px;
+	font-weight: 300;
+	color: #848484;
+	text-decoration: none;
+	transition: var(--transition);
+	white-space: nowrap;
+	overflow: hidden;
+	&:hover,
+	&:focus {
+		color: var(--links);
+		// color: ${(props) => props.imagePalette?.vibrant?.background};
+		transition: var(--transition);
+		text-decoration: underline;
+		text-decoration-color: var(--color-black);
+	}
+	&:hover .domain,
+	&:focus .domain {
+		color: var(--links);
+		// color: ${(props) => props.imagePalette?.vibrant?.background};
+		transition: var(--transition);
+	}
+	&:hover .punctuation,
+	&:focus .punctuation {
+		color: var(--color-black);
+		transition: var(--transition);
+	}
+	.bottom {
+		word-wrap: nowrap;
+		overflow-wrap: normal;
+	}
+	.punctuation {
+		color: #4a4a4a;
+		font-weight: 400;
+		transition: var(--transition);
+	}
+	.domain {
+		color: #000000;
+		font-weight: 700;
+		transition: var(--transition);
+	}
+}

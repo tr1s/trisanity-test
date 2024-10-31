@@ -1,0 +1,20 @@
+/*
+ * New SectionWrapper component styles.
+ * ------------------------------------------------------------------------------
+ *
+ */
+
+@use '@/styles/utils/utils';
+
+.sectionWrap {
+	position: relative;
+}
+.sectionWrap.borderBottom {
+	border-bottom: 1px solid #e6e6e6;
+}
+.sectionWrap.noBottomPadding {
+	padding-bottom: 0;
+}
+.sectionWrap.contentWrapper {
+	max-width: var(--container-inner-width);
+}

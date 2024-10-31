@@ -1,0 +1,28 @@
+/*
+ * Homepage component styles.
+ * ------------------------------------------------------------------------------
+ *
+ */
+
+@use '@/styles/utils/utils';
+
+.intro {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.6rem;
+	padding: 80px 50px;
+	max-width: 614px;
+	width: 100%;
+	color: rgb(58, 56, 67);
+	font-weight: 300;
+}
+.projectsWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6rem;
+	border: 1.5px solid #e1e1e1;
+	width: 414px;
+	margin: 0 auto;
+	border-radius: var(--border-radius);
+}

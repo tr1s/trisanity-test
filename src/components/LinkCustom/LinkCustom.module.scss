@@ -1,0 +1,68 @@
+/*
+ * Custom Link component styles.
+ * ------------------------------------------------------------------------------
+ *
+ */
+
+@import '@/styles/utils/all';
+
+.link {
+	position: static;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	@extend %font-primary-bold;
+	font-size: 16px;
+	line-height: 16px;
+	color: #747491;
+	transition: 300ms color ease-in-out;
+	&:hover,
+	&:focus {
+		color: var(--color-orange);
+	}
+}
+.link.hasArrow {
+	&::after {
+		content: '›';
+		margin-left: 5px;
+		font-size: 24px;
+		color: #9292a8;
+		transition: all 0.3s ease-out;
+	}
+	&:hover::after,
+	&:focus::after {
+		color: var(--color-orange);
+		transition: all 0.3s ease-out;
+	}
+}
+.link.isLinedLink {
+	justify-content: flex-end;
+	&:hover::before {
+		background: var(--color-orange);
+		width: 70px;
+	}
+	&::before {
+		display: block;
+		background: #747491;
+		position: relative;
+		margin-right: 0.5rem;
+		content: '';
+		height: 2px;
+		width: 100px;
+		transition:
+			width 0.3s ease-out,
+			background-color 0.3s ease-out;
+	}
+}
+// When the linkCoversFullContainer prop is passed,
+// ...the link hit box will cover the full width/height of it's parent container.
+.link.linkCoversFullContainer::after {
+	display: block;
+	background: transparent;
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}

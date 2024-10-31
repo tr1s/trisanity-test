@@ -1,0 +1,18 @@
+/*
+ * Nav component styles.
+ * ------------------------------------------------------------------------------
+ *
+ */
+
+.wrapper {
+	border-bottom: 1.5px solid #e1e1e1;
+}
+
+.innerWrapper {
+	margin: 0 auto;
+	padding: 1rem 0;
+	width: 414px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
